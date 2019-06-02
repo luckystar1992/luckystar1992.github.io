@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>ITQM-2019</title>
+
+        <meta name="description" content="ITQM 2019 官方网站">
+        <meta name="author" content="pixelcave & zhengyuanchun">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
+
+        <!-- Bootstrap and OneUI CSS framework -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+        <script type="text/javascript">
+            function loadPage(href)
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", href, false);
+                xmlhttp.send();
+                return xmlhttp.responseText;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="page-container" class="sidebar-l side-scroll header-navbar-fixed">
+
+            <!-- 顶部的header区域，使用p包裹，div会出现错误-->
+            <p id='header'>
+            <p>
+
+            <!-- 主页面 -->
+            <main id="main-container">
+                <!-- Sub Header -->
+                <div class="bg-gray-lighter visible-xs">
+                    <div class="content-mini content-boxed">
+                        <button class="btn btn-block btn-default visible-xs push" data-toggle="collapse" data-target="#sub-header-nav">
+                            <i class="fa fa-navicon push-5-r"></i>Menu
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-primary-lighter collapse navbar-collapse remove-padding" id="sub-header-nav">
+                    <!-- 这里引入的是顶部导航栏(page/nav.html) -->
+                    <div id='nav' class="content-mini content-boxed">
+                    </div>
+                    
+                </div>
+                <!-- END Sub Header -->
+
+                <!-- Page Content -->
+                <div class="content content-boxed">
+                    <!-- Section -->
+                    <div class="col-lg-8">
+                        <div class="block block-rounded">
+                            <div class="block-content block-content-full nice-copy-story">
+                                <img class="pull-right push-15-l" style="height: 150px;" src="assets/img/favicons/elsevier.png">
+                                <p style="text-align:justify" class="nice-copy-story push-20-t clearfix">
+                                    All accepted papers after strict peer-reviewing process will be included in the main conference
+                                    proceedings by <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/719435/description">
+                                    Procedia Computer Science (Elsevier)</a>, which will be submitted for indexing, such as CPCI-S, EI.
+                                    
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="block block-rounded">
+                            <div class="block-content block-content-full nice-copy-story">
+                                <p style="text-align:justify" class="nice-copy-story push-20-t clearfix">
+                                    The extended version of selected papers from the conference proceedings will be invited to publish in International Journal of Information Technology and Decision Making (SCI), Annals of Data Science (Springer).
+                                </p>
+                            </div>  
+                            <div class="text-center">
+                                <img style="width:80%;" src="assets/img/photos/publishers.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id='date' class="col-lg-4">
+                        
+                    </div>
+
+                    <!-- END Section -->
+
+                   
+                </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="footer" class="bg-body font-s12">
+                
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!--为了将html片段能够提前load进来-->
+        <script type="text/javascript"> 
+            document.getElementById("nav").innerHTML=loadPage("page/nav.html");
+            document.getElementById("header").innerHTML=loadPage("page/header.html");
+            document.getElementById("date").innerHTML=loadPage("page/date.html");
+            document.getElementById("footer").innerHTML=loadPage("page/footer.html");
+        </script>
+        <!-- END Page Container -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/plugins/slick/slick.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/app.js"></script>
+
+
+        <!-- Page Plugins -->
+        <script src="assets/js/plugins/chartjs/Chart.min.js"></script>
+
+        <script>
+            $("#nav_publications").addClass("active");
+            jQuery(function () {
+                // Init page helpers (CountTo plugin)
+                App.initHelpers(['appear', 'appear-countTo','slick','uiToggleClass']);
+            });
+        </script>
+    </body>
+</html>
