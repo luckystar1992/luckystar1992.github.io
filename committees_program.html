@@ -51,12 +51,6 @@
                         </button>
                     </div>
                 </div>
-                <div class="bg-primary-lighter collapse navbar-collapse remove-padding" id="sub-header-nav">
-                    <!-- 这里引入的是顶部导航栏(page/nav.html) -->
-                    <div id='nav' class="content-mini content-boxed">
-                    </div>
-                    
-                </div>
                 <!-- END Sub Header -->
 
                 <!-- Page Content -->
@@ -289,7 +283,7 @@
         </div>
         <!--为了将html片段能够提前load进来-->
         <script type="text/javascript"> 
-            document.getElementById("nav").innerHTML=loadPage("page/nav.html");
+            // document.getElementById("nav").innerHTML=loadPage("page/nav.html");
             document.getElementById("header").innerHTML=loadPage("page/header.html");
             document.getElementById("date").innerHTML=loadPage("page/date.html");
             document.getElementById("footer").innerHTML=loadPage("page/footer.html");
